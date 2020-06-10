@@ -3,7 +3,7 @@
     <div class="header__background">
       <div class="header__background__imagery">
         <div class="header__background__imagery__animation">
-          <img src="@/assets/JK-GIF-white.gif"/>
+          <img src="@/assets/JK-GIF-white.gif" />
         </div>
         <div class="header__background__imagery__head">
         </div>
@@ -41,8 +41,8 @@
 
       &__imagery {
         position: absolute;
-        top: 10%;
-        right: 5%;
+        top: 5%;
+        left: 5%;
         width: 100vw;
         height: 75vh;
         display: flex;
@@ -54,8 +54,8 @@
           z-index: 99;
 
           img {
-            width: 60vw; 
-            z-index:99;
+            width: 52vw;
+            z-index: 99;
           }
         }
 
@@ -71,73 +71,94 @@
     }
   }
 
-  @media only screen and (max-width: 1024px) {
+  @media only screen and (max-width: 1440px) {
     .header {
 
-    &__background {
+      &__background {
 
-      &__imagery {
-        top: 15%;
-        right: 7%;
+        &__imagery {
+          top: 15%;
 
-        &__animation {
-        }
+          &__animation {}
 
-        &__head {
+          &__head {}
         }
       }
     }
-  }
 
   }
+
+  @media only screen and (max-width: 1024px) {
+    .header {
+
+      &__background {
+
+        &__imagery {
+          top: 15%;
+          right: 7%;
+
+          &__animation {
+            img {
+              width: 80vw;
+            }
+          }
+
+          &__head {
+            visibility: hidden;
+          }
+        }
+      }
+    }
+
+  }
+
   @media only screen and (max-width: 768px) {
     .header {
       height: 70vh;
 
-    &__background {
-      background-image: none;
+      &__background {
+        background-image: none;
 
-      &__imagery {
-        top: 0%;
-        right: 5%;
+        &__imagery {
+          top: 0%;
+          right: 5%;
 
-        &__animation {
-          
-          img {
-            width: 100vw;
+          &__animation {
+
+            img {
+              width: 100vw;
+            }
           }
-        }
 
-        &__head {
-          visibility: hidden;
+          &__head {
+            visibility: hidden;
+          }
         }
       }
     }
-  }
   }
 
   @media only screen and (max-width: 425px) {
     .header {
       height: 60vh;
 
-    &__background {
-      background-image: none;
+      &__background {
+        background-image: none;
 
-      &__imagery {
-        top: 15%;
-        right: 5%;
+        &__imagery {
+          top: 15%;
+          right: 5%;
 
-        &__animation {
-          
-          img {
+          &__animation {
+
+            img {}
           }
-        }
 
-        &__head {
-          visibility: hidden;
+          &__head {
+            visibility: hidden;
+          }
         }
       }
     }
-  }
   }
 </style>
