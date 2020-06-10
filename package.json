@@ -14,7 +14,9 @@
     "jquery": "^3.5.1",
     "vue": "^2.6.11",
     "vue-slick": "^1.1.15",
-    "vuejs-twitter-feed": "^1.0.1"
+    "vuejs-twitter-feed": "^1.0.1",
+    "express": "^4.17.1",
+    "serve-static": "^1.14.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",
