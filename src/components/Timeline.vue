@@ -1,0 +1,416 @@
+<template>
+    <div class="scrolling-wrapper-flexbox">
+        <div class="card" id="odd">
+            <div class="title">
+                <span>2020</span>
+                <img src="../assets/Hearken.png" alt="Hearken-Logo">
+            </div>
+            <div class="dropdown">
+                Building digital products for journalists focused on covering elections in 2020.
+            </div>
+        </div>
+        <div class="card" id="even">
+            <div class="dropdown-even">
+                Working on a project on how COVID-19 is impacting the Black tech ecosystem.
+            </div>
+            <div class="title-even">
+                <span>2020</span>
+                <img src="../assets/Plug.png" alt="The-Plug-Logo">
+            </div>
+        </div>
+        <div class="card" id="odd">
+            <div class="title">
+                <span>2019</span>
+                <img src="../assets/Vox-Media-Podcast-Network.png" alt="Vox-Podcast-Logo">
+            </div>
+            <div class="dropdown">
+                Spent three months serving as Managing Producer on a tech podcast launch.
+            </div>
+        </div>
+        <div class="card" id="even">
+            <div class="dropdown-even">
+                Started an editorial brand (Afrotech) covering technology and how it impacts people of color.
+            </div>
+            <div class="title-even">
+                <span>2018-2019</span>
+                <img src="../assets/Blavity-logo.png" alt="Blavity-Logo">
+            </div>
+        </div>
+        <div class="card" id="odd">
+            <div class="title">
+                <span>2017</span>
+                <img src="../assets/Poynter.png" alt="Pontyer-Logo">
+            </div>
+            <div class="dropdown">
+                Participated in Poynter’s media leadership training with newsroom managers from around the world.
+            </div>
+        </div>
+        <div class="card" id="even">
+            <div class="dropdown-even">
+                Board member helping the center on strategy and curriculum.
+            </div>
+            <div class="title-even">
+                <span>2017</span>
+                <img src="../assets/WVMIC.jpeg" alt="WVMIC-Logo">
+            </div>
+        </div>
+        <div class="card" id="odd">
+            <div class="title">
+                <span>2017-2018</span>
+                <img src="../assets/SBNation.jpg" alt="SBNation-Logo">
+            </div>
+            <div class="dropdown">
+                Served as Deputy Editor for SB Nation, Vox Media’s sports website. I helped lead the day to day and
+                managed a staff of producers, editors, and writers on night coverage.
+            </div>
+        </div>
+        <div class="card" id="even">
+            <div class="dropdown-even">
+                Served as a Knight Innovator in residence while at CNN. I taught a class on food justice reporting and
+                audience engagement.
+            </div>
+            <div class="title-even">
+                <span>2016</span>
+                <img src="../assets/WVMS.jpeg" alt="WVMS-Logo">
+            </div>
+        </div>
+        <div class="card" id="odd">
+            <div class="title">
+                <span>2015</span>
+                <img src="../assets/CNN.png" alt="CNN-Logo">
+            </div>
+            <div class="dropdown">
+                Worked on CNN’s inaugural social media team that was put in place before the 2016 election. My focus was
+                optimizing content for Facebook, Twitter, and Instagram.
+            </div>
+        </div>
+        <div class="card" id="even">
+            <div class="dropdown-even">
+                Built and led audience engagement strategy around investigative journalism.
+            </div>
+            <div class="title-even">
+                <span>2015</span>
+                <img src="../assets/Center-for-Public-Integrity.jpg" alt="Center-For-Public-Integrity-Logo">
+            </div>
+        </div>
+        <div class="card" id="odd">
+            <div class="title">
+                <span>2014</span>
+                <img src="../assets/NPR.png" alt="NPR-Logo">
+            </div>
+            <div class="dropdown">
+                Worked as a producer for NPR’s Morning Edition creating content for broadcast and the web.
+            </div>
+        </div>
+        <div class="card" id="even">
+            <div class="dropdown-even">
+                Worked with a team of journalist to launch a desk covering wealth, poverty, and income inequality after
+                the financial crash of 2008.
+            </div>
+            <div class="title-even">
+                <span>2012-2014</span>
+                <img src="../assets/Marketplace.jpg" alt="Marketplace-Logo">
+            </div>
+        </div>
+        <div class="card last" id="odd">
+            <div class="title">
+                <span>2008-2011</span>
+                <img src="../assets/WCMU.jpg" alt="WCMU-Logo">
+            </div>
+            <div class="dropdown">
+                Covered local politics and general news.
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+    export default {
+        name: 'Timeline',
+        data() {
+            return {
+                clicked: true
+            }
+        }
+    }
+</script>
+<style lang="scss">
+    .scrolling-wrapper-flexbox {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        background-image: url(../assets/timeline-line.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 50% 50%;
+        width: 100vw;
+        height: 50vh;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            color: white;
+            width: 25vw;
+            height: 25vw;
+            flex-direction: column;
+        }
+
+        #odd {
+            background-image: url(../assets/line-item.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 40vw;
+            height: 25vh;
+
+            .title {
+                order: 1;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                left: 90%;
+
+                img {
+                    width: 250px;
+                    height: 75px;
+                    object-fit: contain;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 2.3vw;
+                    margin-right: 5%;
+                    white-space: nowrap;
+                }
+            }
+
+            .dropdown {
+                order: 2;
+                position: relative;
+                left: 90%;
+                top: 5%;
+                font-size: 1.5rem;
+            }
+        }
+
+        #even {
+            position: relative;
+            top: 50%;
+            background-image: url(../assets/line-item-bottom.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 40vw;
+            height: 25vh;
+
+        }
+
+        .dropdown-even {
+            order: 1;
+            position: relative;
+            left: 55%;
+            font-size: 1.5rem;
+            margin-bottom: 10%;
+            margin-top: 5%;
+        }
+
+        .title-even {
+            order: 2;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            position: relative;
+            left: 55%;
+            top: -15%;
+
+            img {
+                width: 250px;
+                height: 75px;
+                object-fit: contain;
+            }
+
+            span {
+                font-weight: bold;
+                font-size: 2.3vw;
+                margin-right: 5%;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .scrolling-wrapper-flexbox {
+            &::-webkit-scrollbar {}
+
+            .card {}
+
+            #odd {
+
+                .title {
+                    left: 90%;
+
+                    img {}
+
+                    span {
+                        font-size: 2.3vw;
+                    }
+                }
+
+                .dropdown {
+                    left: 90%;
+                    font-size: 2.3vw;
+                }
+            }
+
+            #even {}
+
+            .dropdown-even {
+                left: 70%;
+                margin-bottom: 15%;
+                margin-top: 8%;
+                font-size: 2.3vw;
+            }
+
+            .title-even {
+                left: 70%;
+                top: -15%;
+
+                img {}
+
+                span {}
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .scrolling-wrapper-flexbox {
+            &::-webkit-scrollbar {}
+
+            .card {}
+
+            #odd {
+
+                .title {
+                    left: 100%;
+
+                    img {}
+
+                    span {
+                        font-size: 2.8vw;
+                    }
+                }
+
+                .dropdown {
+                    left: 100%;
+                    font-size: 2.6vw;
+                }
+            }
+
+            #even {}
+
+            .dropdown-even {
+                left: 90%;
+                margin-bottom: 15%;
+                margin-top: 8%;
+                font-size: 2.6vw;
+            }
+
+            .title-even {
+                left: 90%;
+                top: 0%;
+
+                img {}
+
+                span {
+                    font-size: 2.8vw;
+                }
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 425px) {
+        .scrolling-wrapper-flexbox {
+            height: 40vh;
+
+            &::-webkit-scrollbar {}
+
+            .card {
+                margin-left: 5%;
+            }
+
+            #odd {
+                .title {
+                    order: 1;
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    left: 80%;
+
+                    img {
+                        width: 240px;
+                        height: 55px;
+                    }
+
+                    span {
+                        font-size: 4vw;
+                    }
+                }
+
+                .dropdown {
+                    left: 80%;
+                    top: 3%;
+                    font-size: 4vw;
+                    width: 300px;
+                }
+            }
+
+            #even {}
+
+            .dropdown-even {
+                order: 1;
+                position: relative;
+                left: 75%;
+                font-size: 4vw;
+                margin-bottom: 20%;
+                width: 240px;
+            }
+
+            .title-even {
+                order: 2;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                position: relative;
+                left: 75%;
+                top: -10%;
+
+                img {
+                    width: 240px;
+                    height: 55px;
+                }
+
+                span {
+                    font-weight: bold;
+                    font-size: 4vw;
+                    margin-right: 5%;
+                    white-space: nowrap;
+                }
+            }
+        }
+
+        .card .last {
+            width: 50vw !important;
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .scrolling-wrapper-flexbox {
+            height: 38.5vh;
+        }
+    }
+</style>
