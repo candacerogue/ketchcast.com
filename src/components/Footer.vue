@@ -18,5 +18,6 @@
         color: white;
         text-align: center;
         padding-top: 2.5%;
+        font-size: 1.4vw;
     }
 </style>

@@ -40,13 +40,15 @@
       position: relative;
 
       &__imagery {
-        position: absolute;
-        top: 5%;
-        left: 5%;
+        position: relative;
+        top: 10%;
+        left: 15%;
         width: 100vw;
         height: 75vh;
         display: flex;
         align-self: center;
+        display: flex;
+        align-content: center;
 
         &__animation {
           position: relative;
@@ -54,7 +56,8 @@
           z-index: 99;
 
           img {
-            width: 52vw;
+            width: 40vw;
+            height: auto;
             z-index: 99;
           }
         }
@@ -79,9 +82,20 @@
         &__imagery {
           top: 15%;
 
-          &__animation {}
+          &__animation {
+            left: 0%;
 
-          &__head {}
+
+            img {
+               width: 60vw;
+            }
+          }
+
+          &__head {
+            position: relative;
+            right: 20%;
+            bottom: 5%;
+          }
         }
       }
     }
@@ -100,6 +114,7 @@
           &__animation {
             img {
               width: 80vw;
+              right: 5%;
             }
           }
 
@@ -120,13 +135,14 @@
         background-image: none;
 
         &__imagery {
-          top: 0%;
-          right: 5%;
+          top: 10%;
+          right: 0;
+          left: 10%;
 
           &__animation {
 
             img {
-              width: 100vw;
+              width: 85vw;
             }
           }
 
@@ -146,8 +162,7 @@
         background-image: none;
 
         &__imagery {
-          top: 15%;
-          right: 5%;
+          top: 25%;
 
           &__animation {
 

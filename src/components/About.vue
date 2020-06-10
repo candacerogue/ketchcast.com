@@ -42,7 +42,7 @@
             &__img {
                 display: flex;
                 order: 1;
-                background-image: url(../assets/About.svg);
+                background-image: url(../assets/About.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
