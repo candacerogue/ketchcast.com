@@ -71,6 +71,7 @@
       width: 100%;
       height: 80vh;
       margin-left: 5%;
+      margin-top: 5%;
     }
   }
 
@@ -98,7 +99,6 @@
 
       &__timeline {
         height: 75vh;
-        margin-top: 5%;
       }
     }
   }
