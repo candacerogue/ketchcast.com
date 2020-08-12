@@ -84,6 +84,9 @@
           background-repeat: no-repeat;
           background-size: contain;
           background-position: center;
+          position: relative;
+          right: 28%;
+          bottom: 7%;
         }
       }
     }
@@ -110,9 +113,7 @@
           }
 
           &__head {
-            position: relative;
-            right: 28%;
-            bottom: 7%;
+           
           }
         }
       }

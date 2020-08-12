@@ -176,7 +176,7 @@
 
             &__links {
                 right: 0%;
-                left: 5%;
+                left: 10%;
                 bottom: 30%;
 
                 &__gmail {}

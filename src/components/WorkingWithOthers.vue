@@ -71,7 +71,6 @@
       width: 100%;
       height: 80vh;
       margin-left: 5%;
-      margin-top: 5%;
     }
   }
 
@@ -180,6 +179,7 @@
 
       &__title-content {
         top: -2%;
+        margin-bottom: 5%;
 
         &__text {}
 
@@ -190,6 +190,7 @@
 
       &__timeline {
         position: relative;
+
       }
     }
   }
