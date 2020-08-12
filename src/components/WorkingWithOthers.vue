@@ -98,6 +98,7 @@
 
       &__timeline {
         height: 75vh;
+        margin-top: 5%;
       }
     }
   }
