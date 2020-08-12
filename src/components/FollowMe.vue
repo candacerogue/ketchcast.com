@@ -86,7 +86,7 @@
 
             #twitter-widget-0 {
                 width: 600px !important;
-                height: 600px !important;
+                /* height: 800px !important; */
                 box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.5), 0 6px 22px 0 rgba(0, 0, 0, 0.5);
             }
         }
