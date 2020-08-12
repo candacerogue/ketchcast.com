@@ -11,14 +11,17 @@
             </div>
         </div>
         <div class="follow-me__timeline">
-            <TwitterFeed src="https://twitter.com/Ketchcast" dark="true"></TwitterFeed>
+            <Timeline id="ketchcast" sourceType="profile" :options="{ tweetLimit: '5', theme: 'dark'}"/>
         </div>
     </div>
 </template>
 
 <script>
+    import { Timeline } from 'vue-tweet-embed'
+    
     export default {
-        name: 'FollowMe'
+        name: 'FollowMe',
+        components: { Timeline }
     }
 </script>
 
@@ -91,7 +94,38 @@
 
     @media only screen and (max-width: 1440px) {
         .follow-me__timeline {
-            bottom: 325px;
+            bottom: 300px;
+        }
+    }
+    @media only screen and (max-width: 1024px) {
+
+        .follow-me {
+
+            &__content {
+                width: 100%;
+                height: 75vh;
+
+                &__title-content {
+
+                    &__text {}
+
+                    &__img {
+                        height: 75px;
+
+                        img {
+                            width: 10vw;
+                        }
+                    }
+                }
+            }
+
+            &__timeline {
+                bottom: 250px;
+
+                #twitter-widget-0 {
+                    width: 500px !important;
+                }
+            }
         }
     }
 
@@ -121,7 +155,7 @@
                 bottom: 250px;
 
                 #twitter-widget-0 {
-                    width: 300px !important;
+                    width: 500px !important;
                 }
             }
         }
@@ -129,6 +163,7 @@
 
     @media only screen and (max-width: 425px) {
         .follow-me {
+            margin-top: -30%;
 
             &__content {
                 height: 25rem;
@@ -145,9 +180,10 @@
             }
 
             &__timeline {
-                bottom: 250px;
 
-                #twitter-widget-0 {}
+                #twitter-widget-0 {
+                    width: 300px !important;
+                }
             }
         }
     }

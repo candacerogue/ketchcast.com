@@ -1,11 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
-import TwitterFeed from "vuejs-twitter-feed";
-import JohnSlick from "./components/JohnSlick";
+import VueMq from 'vue-mq'
 
 Vue.config.productionTip = false
-Vue.use(TwitterFeed);
-Vue.component('JohnSlick', JohnSlick);
+Vue.use(VueMq, {
+  breakpoints: { 
+    mobile: 450,
+    laptop: 1024,
+    desktop: Infinity,
+  }
+})
 
 new Vue({
   render: h => h(App),

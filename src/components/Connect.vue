@@ -4,26 +4,27 @@
         <div class="connect__ready">
             <img src="../assets/ready.svg" alt="ready">
         </div>
+
         <div class="connect__connect-links">
-            <div class="connect__connect-links__img">
-            </div>
-            <div class="connect__connect-links__links">
-                <div class="connect__connect-links__links__gmail">
-                    <a href="malito:john.ketchum3@gmail.com">
-                        <img src="../assets/gmail.svg" alt="gmail">
-                    </a>
-                </div>
-                <div class="connect__connect-links__links__twitter">
-                    <a href="https://twitter.com/Ketchcast">
-                        <img src="../assets/twitter-black.svg" alt="twitter">
-                    </a>
-                </div>
-                <div class="connect__connect-links__links__linkedIn">
-                    <a href="https://www.linkedin.com/in/john-ketchum-69156155/">
-                        <img src="../assets/linkedin.svg" alt="linkedin">
-                    </a>
-                </div>
-            </div>
+            <div class="connect__connect-links__gif"></div>
+            <div class="connect__connect-links__img"></div>
+        </div>
+        <div class="connect__links">
+            <span class="connect__connect-links__links__gmail">
+                <a href="malito:john.ketchum3@gmail.com">
+                    <img style="width: 5vw; height: auto; margin: 3%;" src="../assets/gmail.svg" alt="gmail">
+                </a>
+            </span>
+            <span class="connect__connect-links__links__twitter">
+                <a href="https://twitter.com/Ketchcast">
+                    <img style="width: 5vw; height: auto; margin: 3%;" src="../assets/twitter-black.svg" alt="twitter">
+                </a>
+            </span>
+            <span class="connect__connect-links__links__linkedIn">
+                <a href="https://www.linkedin.com/in/john-ketchum-69156155/">
+                    <img style="width: 5vw; height: auto; margin: 3%;" src="../assets/linkedin.svg" alt="linkedin">
+                </a>
+            </span>
         </div>
     </div>
 </template>
@@ -50,20 +51,18 @@
         &__header {
             display: flex;
             order: 1;
-            z-index: -1;
             flex-direction: column;
             background-image: url(../assets/Background-ready.png);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             width: 100vw;
-            height: 16rem;
+            height: 40vh;
         }
 
         &__ready {
             display: flex;
             order: 2;
-            z-index: 1;
             margin-top: -7%;
             ;
 
@@ -78,177 +77,173 @@
             display: flex;
             order: 3;
             flex-direction: column;
-            max-height: 20vh;
+            height: 30vh;
+            margin-left: 20%;
 
-            &__img {
+            &__gif {
                 order: 1;
-                background-image: url(../assets/to-connect.svg);
+                background-image: url(../assets/arrow-electrocution.gif);
                 background-repeat: no-repeat;
                 background-size: contain;
-                margin-left: 30%;
-                width: 60vw;
-                height: 16rem;
-            }
-
-            &__links {
-                order: 2;
                 width: 40vw;
-                margin-left: 50%;
-                margin-top: -4%;
-                display: flex;
-                flex-direction: row;
-                align-items: baseline;
+                height: 30rem;
                 position: relative;
-                top: 2%;
-
-                &__gmail {
-                    order: 1;
-                    width: 5rem;
-                    height: 5rem;
-                    margin: 1rem;
-                }
-
-                &__twitter {
-                    order: 2;
-                    width: 5rem;
-                    height: 5rem;
-                    margin: 1rem;
-                }
-
-                &__linkedIn {
-                    order: 3;
-                    width: 5rem;
-                    height: 5rem;
-                    margin: 1rem;
-                }
+                top: -10%;
+                z-index: 1;
             }
+
+            &__img {
+                order: 2;
+                background-image: url(../assets/To-Connect.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 40vw;
+                height: 10rem;
+                z-index: 99;
+                position: relative;
+                top: -70%;
+                left: 20%;
+            }
+
+        }
+
+        &__links {
+            order: 4;
+            width: 20vw;
+            height: 20vh;
+            margin-left: 50%;
+            position: relative;
+            right: 10%;
+            bottom: 30%;
+
+            &__gmail {}
+
+            &__twitter {}
+
+            &__linkedIn {}
         }
     }
 
-@media only screen and (max-width: 1500px) {
-    .connect {
-        height: 400px;
-        margin-top: 10%;
+    @media only screen and (max-width: 1024px) {
 
-        &__header {
-            height: 8rem;
-        }
+        .connect {
+            margin-top: 25%;
 
-        &__ready {
+            &__header {}
 
-            img {
+            &__ready {
+
+                img {}
             }
-        }
 
-        &__connect-links {
+            &__connect-links {
 
-            &__img {
+                &__img {}
+
+                &__gif {}
+
             }
 
             &__links {
-                margin-top: -2%;
-                top: -20%;
+                right: 2%;
+                bottom: 32%;
 
-                &__gmail {
-                    width: 3rem;
-                    height: 3rem;
-                }
+                &__gmail {}
 
-                &__twitter {
-                    width: 3rem;
-                    height: 3rem;
-                }
+                &__twitter {}
 
-                &__linkedIn {
-                    width: 3rem;
-                    height: 3rem;
-                }
+                &__linkedIn {}
             }
         }
     }
-}
 
-@media only screen and (max-width: 768px) {
-    .connect {
-        height: 400px;
-        margin-top: 10%;
-        margin-bottom: 0%;
+    @media only screen and (max-width: 768px) {
+        .connect {
+            &__header {}
 
-        &__header {
-            height: 8rem;
-        }
+            &__ready {
 
-        &__ready {
-
-            img {
+                img {}
             }
-        }
 
-        &__connect-links {
+            &__connect-links {
 
-            &__img {
+                &__img {}
+
+                &__gif {}
+
             }
 
             &__links {
-                margin-top: -2%;
-                top: -30%;
+                right: 0%;
+                left: 5%;
+                bottom: 30%;
 
-                &__gmail {
-                }
+                &__gmail {}
 
-                &__twitter {
-                }
+                &__twitter {}
 
-                &__linkedIn {
-                }
+                &__linkedIn {}
             }
         }
     }
-}
 
-@media only screen and (max-width: 425px) {
-    .connect {
-        height: 300px;
-        margin-top: 15%;
-        margin-bottom: 0%;
+    @media only screen and (max-width: 425px) {
+        .connect {
+            height: 45vh;
+            &__header {}
 
-        &__header {
-            height: 4rem;
-        }
+            &__ready {
 
-        &__ready {
-
-            img {
+                img {}
             }
-        }
 
-        &__connect-links {
-            max-height: 10vh;
+            &__connect-links {
 
-            &__img {
+                &__img {}
+
+                &__gif {}
+
             }
 
             &__links {
+                height: 20vh;
+                right: 0%;
+                left: 10%;
+                bottom: 55%;
 
-                &__gmail {
-                    width: 2rem;
-                    height: 2rem;
-                    margin: .5rem;
-                }
+                &__gmail {}
 
-                &__twitter {
-                    width: 2rem;
-                    height: 2rem;
-                    margin: .5rem;
-                }
+                &__twitter {}
 
-                &__linkedIn {
-                    width: 2rem;
-                    height: 2rem;
-                    margin: .5rem;
+                &__linkedIn {}
+            }
+        }
+    }
+
+    @media only screen and (max-width: 375px) {
+        .connect {
+            &__header {}
+
+            &__ready {
+
+                img {}
+            }
+
+            &__connect-links {
+
+                &__img {}
+
+                &__links {
+                    margin-top: -65%;
+
+                    &__gmail {}
+
+                    &__twitter {}
+
+                    &__linkedIn {}
                 }
             }
         }
     }
-}
 </style>

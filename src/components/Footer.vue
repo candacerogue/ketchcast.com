@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        Website designed by Candace Rogue, LLC
+        Website designed & developed by Candace Rogue, LLC ©2020
     </div>
 </template>
 
@@ -18,6 +18,7 @@
         color: white;
         text-align: center;
         padding-top: 2.5%;
-        font-size: 1.4vw;
+        font-size: 2vw;
+        margin-top: 50px;
     }
 </style>

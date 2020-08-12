@@ -9,54 +9,17 @@
                 </div>
             </div>
             <div class="working-with-me__content__slider">
-                <!-- <john-slick
-                    ref="johnSlick"
-                    :options="slickOptions"
-                    @setPosition="handleSetPosition"
-                >
-                <div
-                    v-for="(media, index) in medias"
-                    :key="index"
-                >
-                    <img
-                        class="gallery-image"
-                        src="media.url"
-                    >
-              </div>
-                ></john-slick> -->
+              <john-slick></john-slick>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-    // import JohnSlick from './JohnSlick'
+    import JohnSlick from './JohnSlick'
     export default {
         name: 'WorkingWithMe',
-        // components: { JohnSlick },
-        data() {
-            return {
-                currentSlide: 0,
-                slickOptions: {
-                    arrows: true,
-                    dots: false,
-                    infinite: false,
-                    slidesToShow: 3,
-                    swipe: true
-                },
-                medias: [
-                  { url: "http://placehold.it/400x350" },
-                  { url:  "http://placehold.it/400x350" },
-                  { url:  "http://placehold.it/400x350" },
-                  { url: "http://placehold.it/400x350" },
-                  { url:  "http://placehold.it/400x350" },
-                  { url:  "http://placehold.it/400x350" }
-            ]
-
-            }
-        },
-        methods: {
-        }
+        components: { JohnSlick }
     }
 </script>
 
@@ -67,17 +30,16 @@
     .working-with-me {
         display: flex;
         order: 3;
-        width: 100%;
+        width: 50%;
         height: 65vh;
         flex-direction: column;
-        margin-top: 8%;
-        margin-left: 25%;
+        margin: auto;
 
         &__content {
             display: flex;
             flex-direction: column;
             background-color: black;
-            width: 50%;
+            width: 100%;
             height: 60vh;
             z-index: 1;
 
@@ -117,55 +79,133 @@
                 display: flex;
                 order: 2;
                 z-index: 99;
-                width: 100%;
-                height: 85vh;
+                height: 55vh;
+                margin-top: 40%;
+                margin-left: -10%;
             }
         }
 
-    }
-
-    .gallery-image img {
-        width: 400px;
-        height: 350px;
-        object-fit: contain;
     }
 
     @media only screen and (max-width: 1440px) {
+        .working-with-me {
+            
+            &__content {
+                height: 55vh;
+                &__title-content {
 
+                    &__text {
+                    }
 
-    .working-with-me {
-        
-        &__content {
-
-            &__title-content {
-
-                &__text {
+                    &__img {
+                        margin-top: 0%;
+                    }
                 }
 
-                &__img {
-                    margin-top: 0%;
+                &__slider {
+                    display: flex;
+                    order: 2;
+                    z-index: 99;
+                    width: 100%;
+                    height: 55vh;
                 }
             }
+        }
 
-            &__slider {
-                display: flex;
-                order: 2;
-                z-index: 99;
-                width: 100%;
-                height: 85vh;
+    }
+
+    @media only screen and (max-width: 1024px) {
+
+        .working-with-me {
+            height: 60vh;
+            
+            &__content {
+                height: 60vh;
+                width: 50vw;
+                &__title-content {
+
+                    &__text {
+                    }
+
+                    &__img {
+                        margin-top: 0%;
+                    }
+                }
+
+                &__slider {
+                    display: flex;
+                    order: 2;
+                    z-index: 99;
+                    width: 100%;
+                    height: 55vh;
+                    margin-top: 50%;
+                }
             }
         }
     }
 
-    .gallery-image img {
-        width: 400px;
-        height: 350px;
-        object-fit: contain;
+    @media only screen and (max-width: 768px) {
+
+        .working-with-me {
+            height: 55vh;
+            
+            &__content {
+                height: 45vh;
+                &__title-content {
+                    
+                    &__text {
+                    }
+
+                    &__img {
+                        margin-top: 0%;
+                    }
+                }
+
+                &__slider {
+                    display: flex;
+                    order: 2;
+                    z-index: 99;
+                    width: 100%;
+                    height: 45vh;
+                    margin-top: 55%;
+                }
+            }
+        }
     }
 
-    .slick-slide, .slick-current, .slick-active {
-        width: 25vw !important;
-        height: 25vw !important;
-    }
+    @media only screen and (max-width: 425px) {
+
+        .working-with-me {
+            width: 100vw;
+            height: 50vh;
+            margin-left: 0%;
+            margin-bottom: 10%;
+            
+            &__content {
+                width: 100vw;
+                height: 45vh;
+
+                &__title-content {
+
+                    &__text {
+                    }
+
+                    &__img {
+                        width: 100vw;
+                        margin-top: -15%;
+                    }
+                }
+
+                &__slider {
+                    display: flex;
+                    order: 2;
+                    z-index: 99;
+                    width: 100%;
+                    height: 45vh;
+                    margin-top: 35%;
+                    margin-left: 0%;
+                }
+            }
+        }
     }
 </style>

@@ -2,8 +2,27 @@
   <div class="header">
     <div class="header__background">
       <div class="header__background__imagery">
-        <div class="header__background__imagery__animation">
-          <img src="@/assets/JK-GIF-white.gif" />
+        <div
+          v-if="$mq === 'laptop'"
+          class="header__background__imagery__animation"
+        >
+          <video width="500" height="500" autoplay loop muted playsinline>
+            <source src="../assets/JK Header Gif.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div
+          v-else-if="$mq === 'mobile'"
+          class="header__background__imagery__animation"
+        >
+          <video width="300" height="300" autoplay loop muted playsinline>
+            <source src="../assets/JK Header Gif.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div
+          v-else
+          class="header__background__imagery__animation"
+        >
+          <img src="../assets/JK-Header-Img.png"/>
         </div>
         <div class="header__background__imagery__head">
         </div>
@@ -31,9 +50,9 @@
     height: 100vh;
 
     &__background {
-      width: 100%;
-      height: 100%;
-      background-image: url(../assets/Background-frame.png);
+      width: 100vw;
+      height: 100vh;
+      background-image: url(../assets/Background-frame.svg);
       background-repeat: no-repeat;
       background-size: 95% 95%;
       background-position: center;
@@ -52,14 +71,10 @@
 
         &__animation {
           position: relative;
-          left: 10%;
           z-index: 99;
-
-          img {
-            width: 40vw;
-            height: auto;
-            z-index: 99;
-          }
+          width: 100vw;
+          height: auto;
+          z-index: 99;
         }
 
         &__head {
@@ -68,7 +83,7 @@
           background-image: url(../assets/JK-Head.png);
           background-repeat: no-repeat;
           background-size: contain;
-          background-position: left;
+          background-position: center;
         }
       }
     }
@@ -78,23 +93,26 @@
     .header {
 
       &__background {
+        margin: 0 auto;
 
         &__imagery {
           top: 15%;
+          left: 20%;
 
           &__animation {
-            left: 0%;
-
 
             img {
-               width: 60vw;
+               width: 40vw;
+               position: relative;
+               top: 0%;
+               left: 10%;
             }
           }
 
           &__head {
             position: relative;
-            right: 20%;
-            bottom: 5%;
+            right: 28%;
+            bottom: 7%;
           }
         }
       }
@@ -109,22 +127,22 @@
 
         &__imagery {
           top: 15%;
-          right: 7%;
+          left: 15%;
+
 
           &__animation {
             img {
-              width: 80vw;
-              right: 5%;
+              width: 60vw;
             }
           }
 
           &__head {
-            visibility: hidden;
+            right: 30%;
+            bottom: 5%
           }
         }
       }
     }
-
   }
 
   @media only screen and (max-width: 768px) {
@@ -135,9 +153,7 @@
         background-image: none;
 
         &__imagery {
-          top: 10%;
-          right: 0;
-          left: 10%;
+          top: 0%;
 
           &__animation {
 
@@ -159,18 +175,60 @@
       height: 60vh;
 
       &__background {
-        background-image: none;
 
         &__imagery {
-          top: 25%;
+          top: 10%;
 
           &__animation {
 
-            img {}
+            img {
+              width: 50vw;
+            }
           }
 
           &__head {
-            visibility: hidden;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    .header {
+
+      &__background {
+
+        &__imagery {
+          left: 10%;
+
+          &__animation {
+
+            img {
+            }
+          }
+
+          &__head {
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 325px) {
+    .header {
+      &__background {
+
+        &__imagery {
+          position: relative;
+          left: 0%;
+
+          &__animation {
+
+            img {
+            }
+          }
+
+          &__head {
           }
         }
       }

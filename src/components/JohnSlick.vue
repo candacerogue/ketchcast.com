@@ -1,141 +1,49 @@
+
 <template>
-    <slick
-      ref="slick"
-      :options="slickOptions"
-      @afterChange="onAfterChange"
-      @beforeChange="onBeforeChange"
-      @breakpoint="onBreakpoint"
-      @destroy="onDestroy"
-      @edge="onEdge"
-      @init="onInit"
-      @reInit="onReInit"
-      @setPosition="onSetPosition"
-      @swipe="onSwipe"
-    >
-      <slot></slot>
-    </slick>
-  </template>
-  
-  <script>
-  import Slick from 'vue-slick'
-  
-  export default {
+	<carousel class="carousel">
+    <slide>
+      <a href="https://afrotech.com/julia-collins-transformed-the-food-industry-now-shes-trying-to-save-the-world" target="blank"><img src="@/assets/Art-1-Pic.png" style="height:275px;"></a>
+    </slide>
+		<slide>
+      <a href="https://afrotech.com/everette-taylor-wants-to-disrupt-the-art-industry" target="blank"><img src="@/assets/Art-2-Pic.png" style="height:275px;"></a>
+    </slide>
+		<slide>
+      <a href="https://www.npr.org/2014/10/23/354871509/herbie-hancock-on-a-path-to-find-my-own-answer" target="blank"><img src="@/assets/Art-3-Pic.png" style="height:275px;"></a>
+    </slide>
+		<slide>
+      <a href="https://afrotech.com/richelieu-dennis-wants-to-turn-madam-c-j-walkers-house-into-an-incubator-for-black-women-entrepreneurs" target="blank"><img src="@/assets/Art-4-Pic.png" style="height:275px;"></a>
+    </slide>
+		<slide>
+      <a href="https://afrotech.com/nipsey-hussle-the-stem-advocate" target="blank"><img src="@/assets/Art-5-Pic.png" style="height:275px;"></a>
+    </slide>
+		<slide>
+      <a href="http://brokenplate.org/" target="blank"><img src="@/assets/Art-6-Pic.png" style="height:275px; width: 700px;"></a>
+    </slide>
+	</carousel>
+</template>
+
+<script>
+	import { Carousel, Slide } from 'vue-carousel';
+
+	export default {			
     components: {
-      Slick
-    },
-  
-    props: {
-      options: {
-        default: () => ({}),
-        required: false,
-        type: Object
-      }
-    },
-  
-    computed: {
-      slick () {
-        return this.$refs.slick
-      },
-  
-      slickOptions () {
-        return this.options
-      }
-    },
-  
-    methods: {
-      next: function () {
-        this.$refs.slick.next()
-      },
-  
-      prev: function () {
-        this.$refs.slick.prev()
-      },
-  
-      pause: function () {
-        this.$refs.slick.pause()
-      },
-  
-      play: function () {
-        this.$refs.slick.play()
-      },
-  
-      goTo: function (index, dontAnimate) {
-        this.$refs.slick.goTo(index, dontAnimate)
-      },
-  
-      currentSlide: function () {
-        return this.$refs.slick.currentSlide()
-      },
-  
-      add: function (element, index, addBefore) {
-        this.$refs.slick.add(element, index, addBefore)
-      },
-  
-      remove: function (index, removeBefore) {
-        this.$refs.slick.remove(index, removeBefore)
-      },
-  
-      filter: function (filterData) {
-        this.$refs.slick.filter(filterData)
-      },
-  
-      unfilter: function () {
-        this.$refs.slick.unfilter()
-      },
-  
-      getOption: function (option) {
-        this.$refs.slick.getOption(option)
-      },
-  
-      setOption: function (option, value, refresh) {
-        this.$refs.slick.setOption(option, value, refresh)
-      },
-  
-      setPosition: function () {
-        this.$refs.slick.setPosition()
-      },
-  
-      // Events
-      onAfterChange: function (event, slick, currentSlide) {
-        this.$emit('afterChange', event, slick, currentSlide)
-      },
-  
-      onBeforeChange: function (event, slick, currentSlide, nextSlide) {
-        this.$emit('beforeChange', event, slick, currentSlide, nextSlide)
-      },
-  
-      onBreakpoint: function (event, slick, breakpoint) {
-        this.$emit('breakpoint', event, slick, breakpoint)
-      },
-  
-      onDestroy: function (event, slick) {
-        this.$emit('destroy', event, slick)
-      },
-  
-      onEdge: function (event, slick, direction) {
-        this.$emit('edge', event, slick, direction)
-      },
-  
-      onInit: function (event, slick) {
-        this.$emit('init', event, slick)
-      },
-  
-      onReInit: function (event, slick) {
-        this.$emit('reInit', event, slick)
-      },
-  
-      onSetPosition: function (event, slick) {
-        this.$emit('setPosition', event, slick)
-      },
-  
-      onSwipe: function (event, slick, direction) {
-        this.$emit('swipe', event, slick, direction)
-      }
+      Carousel,
+      Slide
+		}
+	}
+	
+</script>
+
+<style lang="scss" scoped>
+  .carousel {
+    width: 60vw;
+    display: flex;
+  }
+
+  @media only screen and (max-width: 425px) {
+    .carousel {
+      width: 100vw;
     }
   }
-  </script>
-  
-  <style lang="scss">
-  @import '../../node_modules/slick-carousel/slick/slick.css';
-  </style>
-  
+</style>
+

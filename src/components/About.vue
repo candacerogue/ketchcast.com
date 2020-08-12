@@ -4,12 +4,17 @@
             <div class="about__about-content__img">
             </div>
             <div class="about__about-content__bio">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-                laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-                ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-                in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-                vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis
-                dolore
+                Hey there, it’s John. Thanks for coming through and learning a bit more about me. You’re probably
+                wondering what I’m all about, so here’s the short version: i’m a journalist dedicated to telling the
+                world’s most important stories and putting people in a position to do their best work. Over the past
+                decade, I’ve worked in every corner of the media industry as a producer, reporter, and editor. From
+                helping launch Marketplace’s Wealth and Poverty Desk, to producing for NPR’s Morning Edition, to running
+                social media accounts at CNN, I’ve approached each place I’ve worked with intention, determination, and
+                a hunger to drive innovation across the media industry. I’m currently on the startups team at the
+                American Journalism Project, where I help launch media organizations across the U.S.<br/>
+                <br/>
+                I’ve done a lot and have worked with so many amazing people. Check out the timeline below to see what
+                I’ve been up to.
             </div>
         </div>
     </div>
@@ -25,14 +30,14 @@
 <style lang="scss">
     .about {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
         display: flex;
         order: 2;
-        margin-bottom: 7%;
+        margin-bottom: 17%;
 
         &__about-content {
             width: 80%;
-            height: 40vh;
+            height: 50vh;
             margin: 0 auto;
             display: flex;
             flex-direction: row;
@@ -54,8 +59,8 @@
                 display: flex;
                 order: 2;
                 align-content: center;
-                width: 30vw;
-                font-size: 1.5vw;
+                width: 40vw;
+                font-size: 1.4vw;
                 padding-top: 8%;
                 padding-left: 3%;
             }
@@ -70,8 +75,8 @@
                 width: 85%;
 
                 &__bio {
-                font-size: 1.7vw;
-            }
+                    font-size: 1.7vw;
+                }
             }
         }
     }
