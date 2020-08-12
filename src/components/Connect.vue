@@ -94,7 +94,7 @@
 
             &__img {
                 order: 2;
-                background-image: url(../assets/To-Connect.svg);
+                background-image: url(../assets/connect-with-me.svg);
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 40vw;
