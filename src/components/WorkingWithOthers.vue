@@ -5,6 +5,7 @@
         WORK
       </div>
       <div class="working-with-others__title-content__img">
+        Use Cursor to Scroll
       </div>
     </div>
     <div class="working-with-others__timeline">
@@ -50,19 +51,22 @@
         font-family: 'Bebas Neue', cursive;
         font-size: 20vw;
         color: white;
-        width: 56%;
+        width: 40%;
         text-align: left;
       }
 
-      /* &__img {
+      &__img {
         display: flex;
         order: 1;
-        background-image: url(../assets/with-others.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 44%;
-      } */
+        position: relative; 
+        top: 70%;
+        left: 8%;
+        text-align: left;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 3vw;
+        width: 30%;
+        color: black;
+      }
     }
 
     &__timeline {

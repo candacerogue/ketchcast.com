@@ -344,9 +344,11 @@
 
     @media only screen and (max-width: 425px) {
         .scrolling-wrapper-flexbox {
-            height: 60vh;
+            height: 55vh;
 
-            &::-webkit-scrollbar {}
+            &::-webkit-scrollbar {
+                height: 40vh;
+            }
 
             .card {
                 margin-left: 5%;
@@ -358,7 +360,7 @@
                     display: flex;
                     flex-direction: row;
                     position: relative;
-                    left: 80%;
+                    left: 110%;
 
                     img {
                         width: 240px;
@@ -371,10 +373,10 @@
                 }
 
                 .dropdown {
-                    left: 80%;
+                    left: 110%;
                     top: 3%;
                     font-size: 4vw;
-                    width: 300px;
+                    width: 240px;
                 }
             }
 

@@ -11,6 +11,7 @@
             <div class="working-with-me__content__slider">
               <john-slick></john-slick>
             </div>
+            <!-- <div class="prompt">Use Cursor to Scroll</div> -->
         </div>
     </div>
 </template>
@@ -86,6 +87,15 @@
         }
 
     }
+
+    /* .prompt {
+        order: 3; 
+        position: relative; 
+        top: 50%;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2.5vw;
+    } */
 
     @media only screen and (max-width: 1440px) {
         .working-with-me {

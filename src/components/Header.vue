@@ -14,7 +14,7 @@
           v-else-if="$mq === 'mobile'"
           class="header__background__imagery__animation"
         >
-          <video width="300" height="300" autoplay loop muted playsinline>
+          <video width="300" height="300" poster="../assets/JK-Header-Img.png" autoplay loop muted playsinline>
             <source src="../assets/JK Header Gif.mp4" type="video/mp4">
           </video>
         </div>
@@ -146,9 +146,9 @@
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 800px) {
     .header {
-      height: 70vh;
+      height: 90vh;
 
       &__background {
         background-image: none;
@@ -173,7 +173,7 @@
 
   @media only screen and (max-width: 425px) {
     .header {
-      height: 60vh;
+      height: 80vh !important;
 
       &__background {
 

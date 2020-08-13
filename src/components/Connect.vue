@@ -79,6 +79,7 @@
             flex-direction: column;
             height: 30vh;
             margin-left: 20%;
+            margin-bottom: 2%;
 
             &__gif {
                 order: 1;
@@ -145,6 +146,7 @@
             }
 
             &__links {
+                position: relative;
                 right: 2%;
                 bottom: 32%;
 
@@ -208,6 +210,7 @@
 
             &__links {
                 height: 20vh;
+                position: relative;
                 right: 0%;
                 left: 10%;
                 bottom: 55%;
@@ -236,6 +239,10 @@
 
                 &__links {
                     margin-top: -65%;
+                    position: relative;
+                    right: 0%;
+                    left: 10%;
+                    bottom: 55%;
 
                     &__gmail {}
 

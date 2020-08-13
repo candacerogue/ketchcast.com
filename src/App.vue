@@ -47,13 +47,4 @@
     display: flex;
     flex-direction: column;
   }
-
-  /* @font-face {
-  font-family: 'DIN Bold';
-  src: url('~@assets/fonts/DIN-BoldAlternate.woff2') format('woff2'),
-  url('~@assets/fonts/DIN-BoldAlternate.woff') format('woff'),
-  url('~@assets/fonts/DIN-BoldAlternate.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-} */
 </style>

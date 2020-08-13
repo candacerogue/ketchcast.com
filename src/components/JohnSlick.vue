@@ -37,7 +37,9 @@
 <style lang="scss" scoped>
   .carousel {
     width: 60vw;
+    height: -webkit-fill-available;
     display: flex;
+
   }
 
   @media only screen and (max-width: 425px) {
