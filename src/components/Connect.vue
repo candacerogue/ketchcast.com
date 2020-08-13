@@ -115,7 +115,7 @@
             margin-left: 50%;
             position: relative;
             right: 10%;
-            bottom: 30%;
+            bottom: 35%;
 
             &__gmail {}
 
@@ -196,20 +196,67 @@
      @media not all and (min-resolution:.001dpcm)
     { @supports (-webkit-appearance:none) {
 
+        .connect__connect-links__gif {
+            top: 15%;
+        }
+
+        .connect__connect-links__img {
+                order: 2;
+                background-image: url(../assets/to-connect-fallback.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                width: 40vw;
+                height: 10rem;
+                z-index: 99;
+                position: relative;
+                top: -50%;
+                left: 20%;
+            }
+
+        .connect__links {
+            bottom: 25%;
+        }
+
         @media only screen and (max-width: 800px) {
+
+            .connect__links {
+                right: 15%;
+                left: 0%;
+                bottom: 15%;
+            }
             .safari_only { 
 
                  height: 80vh !important;
 
             }
         }
-        /* @media only screen and (max-width: 425px) {
-            .safari_only { 
-
-                margin-top: 60% !important;
-
+        @media only screen and (max-width: 425px) {
+            .connect__ready {
+                margin-top: -15%;
             }
-        } */
+            
+            .connect__links {
+                left: 0%;
+                top: -20%;
+            }
+
+            .connect__connect-links__gif {
+            top: 0%;
+        }
+
+            .connect__connect-links__img {
+                    order: 2;
+                    background-image: url(../assets/to-connect-fallback.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 40vw;
+                    height: 10rem;
+                    z-index: 99;
+                    position: relative;
+                    top: -60%;
+                    left: 20%;
+                }
+            }
     }}
 
     @media only screen and (max-width: 425px) {
@@ -235,7 +282,7 @@
                 position: relative;
                 right: 0%;
                 left: 10%;
-                bottom: 55%;
+                bottom: 57%;
 
                 &__gmail {}
 
@@ -265,6 +312,32 @@
                     right: 0%;
                     left: 10%;
                     bottom: 55%;
+
+                    &__gmail {}
+
+                    &__twitter {}
+
+                    &__linkedIn {}
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .connect {
+            &__header {}
+
+            &__ready {
+
+                img {}
+            }
+
+            &__connect-links {
+
+                &__img {}
+
+                &__links {
+                    bottom: 61%;
 
                     &__gmail {}
 
