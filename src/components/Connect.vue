@@ -1,5 +1,5 @@
 <template>
-    <div class="connect">
+    <div class="connect safari_only">
         <div class="connect__header"></div>
         <div class="connect__ready">
             <img src="../assets/ready.svg" alt="ready">
@@ -45,7 +45,7 @@
         width: 100vw;
         height: 70vh;
         flex-direction: column;
-        margin-top: 15%;
+        margin-top: 24%;
         margin-bottom: 5%;
 
         &__header {
@@ -159,8 +159,9 @@
         }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 800px) {
         .connect {
+            margin-top: 24%;
             &__header {}
 
             &__ready {
@@ -189,6 +190,27 @@
             }
         }
     }
+
+     /* Safari 10.1+ (alternate method) */
+
+     @media not all and (min-resolution:.001dpcm)
+    { @supports (-webkit-appearance:none) {
+
+        @media only screen and (max-width: 800px) {
+            .safari_only { 
+
+                 height: 80vh !important;
+
+            }
+        }
+        /* @media only screen and (max-width: 425px) {
+            .safari_only { 
+
+                margin-top: 60% !important;
+
+            }
+        } */
+    }}
 
     @media only screen and (max-width: 425px) {
         .connect {

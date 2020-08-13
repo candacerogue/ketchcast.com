@@ -8,7 +8,7 @@
                 <div class="working-with-me__content__title-content__img">
                 </div>
             </div>
-            <div class="working-with-me__content__slider">
+            <div class="working-with-me__content__slider chrome_only safari_only">
               <john-slick></john-slick>
             </div>
             <!-- <div class="prompt">Use Cursor to Scroll</div> -->
@@ -118,6 +118,8 @@
                     z-index: 99;
                     width: 100%;
                     height: 55vh;
+                    position: relative;
+                    top: 50%;
                 }
             }
         }
@@ -130,7 +132,7 @@
             height: 60vh;
             
             &__content {
-                height: 60vh;
+                height: 40vh;
                 width: 50vw;
                 &__title-content {
 
@@ -148,13 +150,14 @@
                     z-index: 99;
                     width: 100%;
                     height: 55vh;
-                    margin-top: 50%;
+                    position: relative;
+                    top: 75%;
                 }
             }
         }
     }
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 800px) {
 
         .working-with-me {
             height: 55vh;
@@ -176,10 +179,87 @@
                     order: 2;
                     z-index: 99;
                     width: 100%;
-                    height: 45vh;
-                    margin-top: 55%;
+                    height: 65vh;
+                    margin-top: 0%;
+                    position: relative;
+                    top: 60%;
                 }
             }
+        }
+    }
+
+    
+ /* Safari 10.1+ (alternate method) */
+
+    @media not all and (min-resolution:.001dpcm)
+    { @supports (-webkit-appearance:none) {
+
+        @media only screen and (max-width: 800px) {
+            .safari_only { 
+
+                margin-top: 0 !important;
+                position: relative !important;
+                top: 0% !important;
+                margin-bottom: 0%;
+
+            }
+
+            .working-with-me {
+                height: 100vh !important;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+
+            .safari_only { 
+
+                margin-top: 0 !important;
+                position: relative !important;
+                top: 0% !important;
+                margin-bottom: 0%;
+
+            }
+
+            .working-with-me {
+                height: 80vh !important;
+            }
+
+            .working-with-me__content {
+                height: 50vh;
+            }
+        }
+
+        @media only screen and (max-width: 320px) {
+
+            .safari_only { 
+
+                margin-top: 0 !important;
+                position: relative !important;
+                top: 0% !important;
+                margin-bottom: 0%;
+
+            }
+
+            .working-with-me {
+                height: 90vh !important;
+            }
+
+            .working-with-me__content {
+                height: 50vh;
+            }
+            }
+    }}
+
+/* Chrome 29+ */
+
+    @supports (-webkit-appearance:none) and (not (overflow:-webkit-marquee))
+    and (not (-ms-ime-align:auto)) and (not (-moz-appearance:none))
+    {
+        .chrome_only {
+
+            margin-top: 0%;
+            position: relative;
+
         }
     }
 
@@ -193,7 +273,7 @@
             
             &__content {
                 width: 100vw;
-                height: 45vh;
+                height: 50vh;
 
                 &__title-content {
 
@@ -212,8 +292,9 @@
                     z-index: 99;
                     width: 100%;
                     height: 45vh;
-                    margin-top: 35%;
                     margin-left: 0%;
+                    position: relative;
+                    top: 20%;
                 }
             }
         }

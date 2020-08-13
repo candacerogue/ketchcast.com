@@ -1,6 +1,6 @@
 
 <template>
-	<carousel class="carousel">
+	<carousel class="carousel safari_only">
     <slide>
       <a href="https://afrotech.com/julia-collins-transformed-the-food-industry-now-shes-trying-to-save-the-world" target="blank"><img src="@/assets/Art-1-Pic.png" style="height:275px;"></a>
     </slide>
@@ -37,7 +37,7 @@
 <style lang="scss" scoped>
   .carousel {
     width: 60vw;
-    height: -webkit-fill-available;
+    height: -webkit-fit-content;
     display: flex;
 
   }
@@ -47,5 +47,18 @@
       width: 100vw;
     }
   }
+
+   /* Safari 10.1+ (alternate method) */
+
+   /* @media not all and (min-resolution:.001dpcm)
+    { @supports (-webkit-appearance:none) {
+
+        @media only screen and (max-width: 425px) {
+            .safari_only { 
+              margin: -27% 0;
+
+            }
+        }
+    }} */
 </style>
 
