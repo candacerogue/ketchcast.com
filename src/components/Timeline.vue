@@ -338,13 +338,13 @@
             #even {}
 
             .dropdown-even {
-                left: 90%;
+                left: 100%;
                 width: 49vw;
                 height: 25vh;
             }
 
             .title-even {
-                left: 90%;
+                left: 100%;
                 top: 0%;
 
                 img {}
@@ -358,7 +358,7 @@
 
     @media only screen and (max-width: 425px) {
         .scrolling-wrapper-flexbox {
-            height: 45vh;
+            height: 48vh;
 
             &::-webkit-scrollbar {
                 height: 40vh;
@@ -382,7 +382,7 @@
                     }
 
                     span {
-                        /* font-size: 4vw; */
+                        font-size: 3vw;
                     }
                 }
 
@@ -475,16 +475,18 @@
             }
 
             #even {
-                margin-left: 15%;
+                margin-left: 5%;
+                height: 27vh;
             }
 
             .dropdown-even {
                 order: 1;
                 position: relative;
-                left: 75%;
+                /* left: 100%; */
                 font-size: 3.7vw;
                 margin-bottom: 20%;
                 width: 240px;
+                margin-left: 45%;
             }
 
             .title-even {
@@ -493,8 +495,9 @@
                 flex-direction: row;
                 align-items: center;
                 position: relative;
-                left: 75%;
+                /* left: 100%; */
                 top: -22%;
+                margin-left: 45%;
 
                 img {
                     width: 190px;
@@ -534,13 +537,11 @@
                     img {}
 
                     span {
-                        font-size: 4vw;
                     }
                 }
 
                 .dropdown {
                     left: 90%;
-                    font-size: 4vw;
                 }
             }
 
@@ -551,9 +552,6 @@
 
             .dropdown-even {
                 left: 70%;
-                /* margin-bottom: 15%; */
-                /* margin-top: 8%; */
-                font-size: 4vw;
                 width: 260px;
             }
 
@@ -564,7 +562,6 @@
                 img {}
 
                 span {
-                    font-size: 4.5vw;
                 }
             }
 
