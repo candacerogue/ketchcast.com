@@ -155,7 +155,7 @@
         background-size: contain;
         background-position: 50% 50%;
         width: 100vw;
-        height: 70vh;
+        height: 55vh;
 
         &::-webkit-scrollbar {
             display: none;
@@ -174,8 +174,10 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
-            width: 40vw;
-            height: 35vh;
+            width: 30vw;
+            height: 28vh;
+            display: flex;
+            flex-direction: column;
 
             .title {
                 order: 1;
@@ -183,7 +185,7 @@
                 flex-direction: row;
                 position: relative;
                 left: 90%;
-                margin: 5%;
+                padding-left: 5%;
 
                 img {
                     width: 250px;
@@ -204,8 +206,8 @@
                 position: relative;
                 left: 90%;
                 top: 5%;
-                font-size: 1.5rem;
-                margin: 5%;
+                font-size: 1.15rem;
+                padding: 5%;
             }
         }
 
@@ -215,8 +217,10 @@
             background-image: url(../assets/line-item-bottom.svg);
             background-repeat: no-repeat;
             background-size: contain;
-            width: 40vw;
-            height: 35vh;
+            width: 30vw;
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
 
         }
 
@@ -224,8 +228,8 @@
             order: 1;
             position: relative;
             left: 55%;
-            font-size: 1.5rem;
-            margin: 10%;
+            font-size: 1.15rem;
+            padding: 5%;
         }
 
         .title-even {
@@ -236,7 +240,7 @@
             position: relative;
             left: 55%;
             top: 0%;
-            margin: 10%;
+            padding-left: 5%;
 
             img {
                 width: 250px;
@@ -267,13 +271,18 @@
                     img {}
 
                     span {
-                        font-size: 2.3vw;
                     }
                 }
 
                 .dropdown {
                     left: 90%;
-                    font-size: 2.3vw;
+                    width: 39vw;
+                }
+                .title {
+
+                    img {}
+
+                    span {}
                 }
             }
 
@@ -281,14 +290,14 @@
 
             .dropdown-even {
                 left: 70%;
-                margin-bottom: 15%;
-                margin-top: 8%;
-                font-size: 2.3vw;
+                width: 35vw;
+                padding: 5%;
             }
 
             .title-even {
                 left: 70%;
                 top: -15%;
+                padding: 5%;
 
                 img {}
 
@@ -300,11 +309,16 @@
 
     @media only screen and (max-width: 768px) {
         .scrolling-wrapper-flexbox {
+            height: 55vh;
             &::-webkit-scrollbar {}
 
-            .card {}
+            .card {
+                margin-left: 10%;
+            }
 
             #odd {
+                width: 30vw;
+                height: 28vh;
 
                 .title {
                     left: 100%;
@@ -312,13 +326,12 @@
                     img {}
 
                     span {
-                        font-size: 2.8vw;
                     }
                 }
 
                 .dropdown {
                     left: 100%;
-                    font-size: 2.6vw;
+                    width: 49vw;
                 }
             }
 
@@ -326,9 +339,8 @@
 
             .dropdown-even {
                 left: 90%;
-                margin-bottom: 15%;
-                margin-top: 8%;
-                font-size: 2.6vw;
+                width: 49vw;
+                height: 25vh;
             }
 
             .title-even {
@@ -338,7 +350,6 @@
                 img {}
 
                 span {
-                    font-size: 2.8vw;
                 }
             }
 
@@ -347,7 +358,7 @@
 
     @media only screen and (max-width: 425px) {
         .scrolling-wrapper-flexbox {
-            height: 55vh;
+            height: 45vh;
 
             &::-webkit-scrollbar {
                 height: 40vh;
@@ -366,32 +377,33 @@
                     left: 110%;
 
                     img {
-                        width: 240px;
-                        height: 55px;
+                        width: 200px;
+                        height: 50px;
                     }
 
                     span {
-                        font-size: 4vw;
+                        /* font-size: 4vw; */
                     }
                 }
 
                 .dropdown {
                     left: 110%;
                     top: 3%;
-                    font-size: 4vw;
-                    width: 240px;
+                    font-size: 3vw;
+                    width: 50vw;
                 }
             }
 
-            #even {}
+            #even {
+                padding: 5%;
+            }
 
             .dropdown-even {
                 order: 1;
                 position: relative;
                 left: 75%;
-                font-size: 4vw;
-                margin-bottom: 20%;
-                width: 240px;
+                font-size: 3vw;
+                width: 50vw;
             }
 
             .title-even {
@@ -401,16 +413,16 @@
                 align-items: center;
                 position: relative;
                 left: 75%;
-                top: -10%;
+                top: -15%;
 
                 img {
-                    width: 240px;
-                    height: 55px;
+                    width: 200px;
+                    height: 50px;
                 }
 
                 span {
                     font-weight: bold;
-                    font-size: 4vw;
+                    font-size: 3vw;
                     margin-right: 5%;
                     white-space: nowrap;
                 }
@@ -424,7 +436,7 @@
 
     @media only screen and (max-width: 375px) {
         .scrolling-wrapper-flexbox {
-            height: 54vh;
+            height: 43vh;
 
             &::-webkit-scrollbar {}
 
@@ -444,19 +456,19 @@
                     margin-left: 15%;
 
                     img {
-                        width: 240px;
-                        height: 55px;
+                        width: 190px;
+                        height: 40px;
                     }
 
                     span {
-                        font-size: 4vw;
+                        font-size: 3.7vw;
                     }
                 }
 
                 .dropdown {
                     left: 80%;
                     top: 3%;
-                    font-size: 4vw;
+                    font-size: 3.7vw;
                     width: 300px;
                     margin-left: 25%;
                 }
@@ -470,7 +482,7 @@
                 order: 1;
                 position: relative;
                 left: 75%;
-                font-size: 4vw;
+                font-size: 3.7vw;
                 margin-bottom: 20%;
                 width: 240px;
             }
@@ -482,16 +494,16 @@
                 align-items: center;
                 position: relative;
                 left: 75%;
-                top: -5%;
+                top: -22%;
 
                 img {
-                    width: 240px;
-                    height: 55px;
+                    width: 190px;
+                    height: 40px;
                 }
 
                 span {
                     font-weight: bold;
-                    font-size: 4vw;
+                    font-size: 3.7vw;
                     margin-right: 5%;
                     white-space: nowrap;
                 }
@@ -505,7 +517,7 @@
 
     @media only screen and (max-width: 325px) {
         .scrolling-wrapper-flexbox {
-            height: 60vh;
+            height: 40vh;
 
             &::-webkit-scrollbar {}
 
@@ -513,6 +525,7 @@
 
             #odd {
                 width: 55vw;
+                height: 20vh;
                 margin-right: 15%;
 
                 .title {
@@ -521,34 +534,38 @@
                     img {}
 
                     span {
-                        font-size: 5vw;
+                        font-size: 4vw;
                     }
                 }
 
                 .dropdown {
                     left: 90%;
-                    font-size: 5vw;
+                    font-size: 4vw;
                 }
             }
 
             #even {
                 width: 55vw;
+                height: 15vh;
             }
 
             .dropdown-even {
                 left: 70%;
-                margin-bottom: 15%;
-                margin-top: 8%;
-                font-size: 5vw;
+                /* margin-bottom: 15%; */
+                /* margin-top: 8%; */
+                font-size: 4vw;
+                width: 260px;
             }
 
             .title-even {
                 left: 70%;
-                top: -5%;
+                top: -45%;
 
                 img {}
 
-                span {}
+                span {
+                    font-size: 4.5vw;
+                }
             }
 
         }

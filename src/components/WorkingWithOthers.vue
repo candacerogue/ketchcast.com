@@ -39,14 +39,14 @@
 
     &__title-content {
       width: 100%;
-      height: 20vh;
+      height: 40vh;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      align-content: baseline;
       order: 1;
       position: relative;
       top: -7%;
+      align-items: center;
 
       &__text {
         font-family: 'Bebas Neue', cursive;
@@ -54,13 +54,13 @@
         color: white;
         width: 40%;
         text-align: left;
+
       }
 
       &__img {
         display: flex;
         order: 1;
         position: relative; 
-        top: 70%;
         left: 8%;
         text-align: left;
         font-family: 'Bebas Neue', cursive;
@@ -74,9 +74,7 @@
       display: flex;
       order: 2;
       width: 100%;
-      height: 80vh;
-      /* margin-left: 5%; */
-      margin-top: 10%;
+      height: 60vh;
     }
   }
 
@@ -89,21 +87,16 @@
 
       &__title-content {
         top: -5%;
-        height: 25vh;
 
         &__text {
           
         }
 
         /* &__img {
-          height: 20vh;
-          position: relative;
-          top: 5%;
         } */
       }
 
       &__timeline {
-        height: 75vh;
       }
     }
   }
@@ -137,7 +130,7 @@
       margin-top: 20%;
 
       &__title-content {
-        height: 15vh;
+        height: 25vh;
 
         &__text {
           font-size: 25vw;
@@ -149,8 +142,7 @@
       }
 
       &__timeline {
-        height: 85vh;
-        margin-top: 10%;
+        height: 75vh;
       }
     }
   }

@@ -31,7 +31,7 @@
 <style lang="scss">
     .about {
         width: 100%;
-        height: 60vh;
+        height: 70vh;
         display: flex;
         order: 2;
         margin-bottom: 20%;
@@ -70,7 +70,7 @@
 
     @media only screen and (max-width: 1024px) {
         .about {
-            height: 30vh;
+            height: 40vh;
 
             &__about-content {
                 width: 85%;
@@ -84,6 +84,7 @@
 
     @media only screen and (max-width: 600px) {
         .about {
+            height: 60vh;
 
             &__about-content {
                 flex-direction: column;
@@ -109,7 +110,6 @@
 
     @media only screen and (max-width: 425px) {
         .about {
-            height: 50vh;
         }
     }
 </style>
