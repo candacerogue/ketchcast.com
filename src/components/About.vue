@@ -11,10 +11,11 @@
                 helping launch Marketplace’s Wealth and Poverty Desk, to producing for NPR’s Morning Edition, to running
                 social media accounts at CNN, I’ve approached each place I’ve worked with intention, determination, and
                 a hunger to drive innovation across the media industry. I’m currently on the startups team at the
-                American Journalism Project, where I help launch media organizations across the U.S.<br/>
-                <br/>
+                American Journalism Project, where I help launch media organizations across the U.S.<br />
+                <br />
                 I’ve done a lot and have worked with so many amazing people. Check out the timeline below to see what
-                I’ve been up to.
+                I’ve been up to. Also, if you’d like to check out some of my work, please take a look at some articles
+                I’ve written, interactive projects I’ve created, audio interviews I’ve produced, and more.
             </div>
         </div>
     </div>

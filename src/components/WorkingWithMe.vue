@@ -32,7 +32,7 @@
         display: flex;
         order: 3;
         width: 50%;
-        height: 65vh;
+        height: 75vh;
         flex-direction: column;
         margin: auto;
 
@@ -41,7 +41,7 @@
             flex-direction: column;
             background-color: black;
             width: 100%;
-            height: 60vh;
+            height: 70vh;
             z-index: 1;
 
             &__title-content {

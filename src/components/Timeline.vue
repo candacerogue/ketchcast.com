@@ -9,25 +9,26 @@
                 <img src="../assets/AJP-Logo.png" alt="AJP-Logo">
             </div>
         </div> -->
-        <div class="card" id="odd">
-            <div class="title">
+        <div class="card" id="even">
+            <div class="title-even">
                 <span>2020</span>
                 <img src="../assets/AJP-Logo.png" alt="AJP-Logo">
             </div>
-            <div class="dropdown">
-                Working with a team of journalism, product, and finance experts to launch sustainable media organizations across the country. 
+            <div class="dropdown-even">
+                Working with a team of journalism, product, and finance experts to launch sustainable media
+                organizations across the country.
             </div>
         </div>
-        <div class="card" id="even">
-            <div class="dropdown-even">
-                Working on a project on how COVID-19 is impacting the Black tech ecosystem.
+        <div class="card" id="odd">
+            <div class="dropdown">
+                Editing stories and managing projects on the Black Innovation economy.
             </div>
-            <div class="title-even">
+            <div class="title">
                 <span>2020</span>
                 <img src="../assets/Plug.png" alt="The-Plug-Logo">
             </div>
         </div>
-        <div class="card" id="odd">
+        <!-- <div class="card" id="odd">
             <div class="title">
                 <span>2019</span>
                 <img src="../assets/Vox-Media-Podcast-Network.png" alt="Vox-Podcast-Logo">
@@ -35,10 +36,10 @@
             <div class="dropdown">
                 Spent three months serving as Managing Producer on a tech podcast launch.
             </div>
-        </div>
+        </div> -->
         <div class="card" id="even">
             <div class="dropdown-even">
-                Started an editorial brand (Afrotech) covering technology and how it impacts people of color.
+                Helped launch an editorial brand (Afrotech) focused on technology and how it impacts people of color.
             </div>
             <div class="title-even" style="margin-top: -6%">
                 <span>2018-2019</span>
@@ -64,12 +65,12 @@
             </div>
         </div>
         <div class="card" id="odd">
-            <div class="title" >
+            <div class="title">
                 <span>2017-2018</span>
                 <img src="../assets/SBNation.jpg" alt="SBNation-Logo">
             </div>
             <div class="dropdown" style="margin-top: -5%;">
-                Served as Deputy Editor for SB Nation, Vox Media’s sports website. I helped lead the day to day and
+                Served as Deputy Editor for SB Nation, Vox Media’s sports website. I helped lead the day-to-day and
                 managed a staff of producers, editors, and writers on night coverage.
             </div>
         </div>
@@ -88,7 +89,7 @@
                 <span>2015</span>
                 <img src="../assets/CNN.png" alt="CNN-Logo" style="width: 130px;">
             </div>
-            <div class="dropdown"  style="margin-top: -5%;">
+            <div class="dropdown" style="margin-top: -5%;">
                 Worked on CNN’s inaugural social media team that was put in place before the 2016 election. My focus was
                 optimizing content for Facebook, Twitter, and Instagram.
             </div>
@@ -422,7 +423,8 @@
     @media only screen and (max-width: 375px) {
         .scrolling-wrapper-flexbox {
             height: 54vh;
-         &::-webkit-scrollbar {}
+
+            &::-webkit-scrollbar {}
 
             .card {
                 margin-left: 15%;
@@ -430,6 +432,7 @@
 
             #odd {
                 margin-right: 25%;
+
                 .title {
                     order: 1;
                     display: flex;
@@ -501,17 +504,15 @@
     @media only screen and (max-width: 325px) {
         .scrolling-wrapper-flexbox {
             height: 60vh;
-            &::-webkit-scrollbar {
 
-            }
+            &::-webkit-scrollbar {}
 
-            .card {
-               
-            }
+            .card {}
 
             #odd {
                 width: 55vw;
                 margin-right: 15%;
+
                 .title {
                     left: 90%;
 
@@ -549,5 +550,5 @@
             }
 
         }
-  }
+    }
 </style>

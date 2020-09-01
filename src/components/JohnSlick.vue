@@ -17,7 +17,16 @@
       <a href="https://afrotech.com/nipsey-hussle-the-stem-advocate" target="blank"><img src="@/assets/Art-5-Pic.png" style="height:275px;"></a>
     </slide>
 		<slide>
-      <a href="http://brokenplate.org/" target="blank"><img src="@/assets/Art-6-Pic.png" style="height:275px; width: 700px;"></a>
+      <a href="http://brokenplate.net" target="blank"><img src="@/assets/Art-6-Pic.png" style="height:275px; width: 700px;"></a>
+    </slide>
+    <slide>
+      <a href="https://www.npr.org/2014/10/28/359340269/what-is-it-about-kendrick-lamar" target="blank"><img src="@/assets/Art-7-Pic.png" style="height:275px;"></a>
+    </slide>
+    <slide>
+      <a href="https://www.npr.org/sections/codeswitch/2014/11/14/363793023/director-gina-prince-bythewood-its-time-to-obliterate-the-term-black-film" target="blank"><img src="@/assets/Art-8-Pic.png" style="height:275px;"></a>
+    </slide>
+    <slide>
+      <a href="https://www.npr.org/sections/thetwo-way/2014/09/11/347746868/susan-rice-islamic-state-fight-will-not-be-iraq-war-redux" target="blank"><img src="@/assets/Art-9-Pic.png" style="height:275px;"></a>
     </slide>
 	</carousel>
 </template>
@@ -39,7 +48,6 @@
     width: 60vw;
     height: -webkit-fit-content;
     display: flex;
-
   }
 
   @media only screen and (max-width: 425px) {
