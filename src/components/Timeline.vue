@@ -309,7 +309,7 @@
 
     @media only screen and (max-width: 768px) {
         .scrolling-wrapper-flexbox {
-            height: 55vh;
+            height: 53vh;
             &::-webkit-scrollbar {}
 
             .card {
@@ -496,7 +496,7 @@
                 align-items: center;
                 position: relative;
                 /* left: 100%; */
-                top: -22%;
+                top: -27%;
                 margin-left: 45%;
 
                 img {
