@@ -41,7 +41,7 @@
             flex-direction: column;
             background-color: black;
             width: 100%;
-            height: 70vh;
+            height: 80vh;
             z-index: 1;
 
             &__title-content {

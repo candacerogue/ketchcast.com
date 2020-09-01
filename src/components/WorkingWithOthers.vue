@@ -35,10 +35,11 @@
     width: 100%;
     height: 100vh;
     margin: 10% 0;
+    padding-bottom: 10%;
 
     &__title-content {
       width: 100%;
-      height: 18%;
+      height: 20vh;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -74,8 +75,8 @@
       order: 2;
       width: 100%;
       height: 80vh;
-      margin-left: 5%;
-      margin-top: 5%;
+      /* margin-left: 5%; */
+      margin-top: 10%;
     }
   }
 

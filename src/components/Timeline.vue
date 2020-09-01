@@ -9,23 +9,23 @@
                 <img src="../assets/AJP-Logo.png" alt="AJP-Logo">
             </div>
         </div> -->
-        <div class="card" id="even">
-            <div class="title-even">
-                <span>2020</span>
-                <img src="../assets/AJP-Logo.png" alt="AJP-Logo">
-            </div>
+        <div class="card" id="even" style="margin-left: 150px;">
             <div class="dropdown-even">
                 Working with a team of journalism, product, and finance experts to launch sustainable media
                 organizations across the country.
             </div>
+            <div class="title-even">
+                <span>2020</span>
+                <img src="../assets/AJP-Logo.png" alt="AJP-Logo">
+            </div>
         </div>
         <div class="card" id="odd">
-            <div class="dropdown">
-                Editing stories and managing projects on the Black Innovation economy.
-            </div>
             <div class="title">
                 <span>2020</span>
                 <img src="../assets/Plug.png" alt="The-Plug-Logo">
+            </div>
+            <div class="dropdown">
+                Editing stories and managing projects on the Black Innovation economy.
             </div>
         </div>
         <!-- <div class="card" id="odd">
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="card" id="even">
-            <div class="dropdown-even" style="margin-top: 0%;">
+            <div class="dropdown-even">
                 Served as a Knight Innovator in residence while at CNN. I taught a class on food justice reporting and
                 audience engagement.
             </div>
@@ -113,7 +113,7 @@
             </div>
         </div>
         <div class="card" id="even">
-            <div class="dropdown-even" style="margin-top: 0%;">
+            <div class="dropdown-even">
                 Worked with a team of journalist to launch a desk covering wealth, poverty, and income inequality after
                 the financial crash of 2008.
             </div>
@@ -183,6 +183,7 @@
                 flex-direction: row;
                 position: relative;
                 left: 90%;
+                margin: 5%;
 
                 img {
                     width: 250px;
@@ -204,6 +205,7 @@
                 left: 90%;
                 top: 5%;
                 font-size: 1.5rem;
+                margin: 5%;
             }
         }
 
@@ -223,8 +225,7 @@
             position: relative;
             left: 55%;
             font-size: 1.5rem;
-            margin-top: 5%;
-            margin-bottom: 5%;
+            margin: 10%;
         }
 
         .title-even {
@@ -235,6 +236,7 @@
             position: relative;
             left: 55%;
             top: 0%;
+            margin: 10%;
 
             img {
                 width: 250px;
