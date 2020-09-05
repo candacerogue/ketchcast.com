@@ -9,7 +9,7 @@
                 <img src="../assets/AJP-Logo.png" alt="AJP-Logo">
             </div>
         </div> -->
-        <div class="card" id="even" style="margin-left: 150px;">
+        <div class="card" id="even" style="margin-left: 100px;">
             <div class="dropdown-even">
                 Working with a team of journalism, product, and finance experts to launch sustainable media
                 organizations across the country.
