@@ -36,8 +36,8 @@
 <style>
   html,
   body {
-    max-width: 100%;
-    overflow-x: hidden;
+    width: auto !important;
+    overflow-x: hidden !important;
   }
 
   #app {

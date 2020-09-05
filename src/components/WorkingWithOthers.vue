@@ -5,7 +5,7 @@
         WORK
       </div>
       <div class="working-with-others__title-content__img">
-        Use Cursor to Scroll
+        Scroll Timeline Horizontally
       </div>
     </div>
     <div class="working-with-others__timeline">
