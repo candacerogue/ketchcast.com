@@ -162,6 +162,7 @@
     @media only screen and (max-width: 800px) {
         .connect {
             margin-top: 24%;
+
             &__header {}
 
             &__ready {
@@ -191,16 +192,16 @@
         }
     }
 
-     /* Safari 10.1+ (alternate method) */
+    /* Safari 10.1+ (alternate method) */
 
-     @media not all and (min-resolution:.001dpcm)
-    { @supports (-webkit-appearance:none) {
+    @media not all and (min-resolution:.001dpcm) {
+        @supports (-webkit-appearance:none) {
 
-        .connect__connect-links__gif {
-            top: 15%;
-        }
+            .connect__connect-links__gif {
+                top: 15%;
+            }
 
-        .connect__connect-links__img {
+            .connect__connect-links__img {
                 order: 2;
                 background-image: url(../assets/to-connect-fallback.png);
                 background-repeat: no-repeat;
@@ -213,38 +214,40 @@
                 left: 20%;
             }
 
-        .connect__links {
-            bottom: 25%;
-        }
-
-        @media only screen and (max-width: 800px) {
-
             .connect__links {
-                right: 15%;
-                left: 0%;
-                bottom: 15%;
-            }
-            .safari_only { 
-
-                 height: 80vh !important;
-
-            }
-        }
-        @media only screen and (max-width: 425px) {
-            .connect__ready {
-                margin-top: -15%;
-            }
-            
-            .connect__links {
-                left: 0%;
-                top: -20%;
+                bottom: 25%;
             }
 
-            .connect__connect-links__gif {
-            top: 0%;
-        }
+            @media only screen and (max-width: 800px) {
 
-            .connect__connect-links__img {
+                .connect__links {
+                    right: 15%;
+                    left: 0%;
+                    bottom: 15%;
+                }
+
+                .safari_only {
+
+                    height: 80vh !important;
+
+                }
+            }
+
+            @media only screen and (max-width: 425px) {
+                .connect__ready {
+                    margin-top: -15%;
+                }
+
+                .connect__links {
+                    left: 0%;
+                    top: -20%;
+                }
+
+                .connect__connect-links__gif {
+                    top: 0%;
+                }
+
+                .connect__connect-links__img {
                     order: 2;
                     background-image: url(../assets/to-connect-fallback.png);
                     background-repeat: no-repeat;
@@ -257,11 +260,13 @@
                     left: 20%;
                 }
             }
-    }}
+        }
+    }
 
     @media only screen and (max-width: 425px) {
         .connect {
             height: 45vh;
+
             &__header {}
 
             &__ready {

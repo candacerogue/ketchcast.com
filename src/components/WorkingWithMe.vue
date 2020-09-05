@@ -11,7 +11,6 @@
             <div class="working-with-me__content__slider chrome_only safari_only">
               <john-slick></john-slick>
             </div>
-            <!-- <div class="prompt">Use Cursor to Scroll</div> -->
         </div>
     </div>
 </template>
@@ -120,6 +119,7 @@
                     height: 55vh;
                     position: relative;
                     top: 50%;
+                    justify-content: center;
                 }
             }
         }

@@ -1,6 +1,6 @@
 
 <template>
-	<carousel class="carousel safari_only">
+	<carousel class="carousel safari_only" :autoplay="true" :autoplayHoverPauce="true" :centerMode="true">
     <slide>
       <a href="https://afrotech.com/julia-collins-transformed-the-food-industry-now-shes-trying-to-save-the-world" target="blank"><img src="@/assets/Art-1-Pic.png" style="height:275px;"></a>
     </slide>
@@ -28,6 +28,9 @@
     <slide>
       <a href="https://www.npr.org/sections/thetwo-way/2014/09/11/347746868/susan-rice-islamic-state-fight-will-not-be-iraq-war-redux" target="blank"><img src="@/assets/Art-9-Pic.png" style="height:275px;"></a>
     </slide>
+    <slide>
+      <a href="https://www.npr.org/sections/thetwo-way/2014/09/11/347746868/susan-rice-islamic-state-fight-will-not-be-iraq-war-redux" target="blank"><img src=""></a>
+    </slide>
 	</carousel>
 </template>
 
@@ -45,7 +48,7 @@
 
 <style lang="scss" scoped>
   .carousel {
-    width: 60vw;
+    width: 100vw;
     height: -webkit-fit-content;
     display: flex;
   }
