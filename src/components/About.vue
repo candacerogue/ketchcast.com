@@ -34,7 +34,7 @@
         height: 70vh;
         display: flex;
         order: 2;
-        margin-bottom: 20%;
+        margin-bottom: 25%;
 
         &__about-content {
             width: 80%;

@@ -167,6 +167,8 @@
             width: 25vw;
             height: 30vw;
             flex-direction: column;
+            background-color: transparent;
+            border: none;
         }
 
         #odd {
@@ -206,7 +208,7 @@
                 position: relative;
                 left: 90%;
                 top: 5%;
-                font-size: 1.15rem;
+                font-size: 1rem;
                 padding: 5%;
             }
         }
@@ -228,7 +230,7 @@
             order: 1;
             position: relative;
             left: 55%;
-            font-size: 1.15rem;
+            font-size: 1rem;
             padding: 5%;
         }
 
@@ -326,6 +328,7 @@
                     img {}
 
                     span {
+                        font-size: 2vw;
                     }
                 }
 
@@ -350,6 +353,7 @@
                 img {}
 
                 span {
+                    font-size: 2vw;
                 }
             }
 

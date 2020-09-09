@@ -24,9 +24,9 @@
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
     @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+    
     .working-with-me {
         display: flex;
         order: 3;
@@ -81,7 +81,8 @@
                 z-index: 99;
                 height: 55vh;
                 margin-top: 40%;
-                margin-left: -10%;
+                /* margin-left: -10%; */
+
             }
         }
 
