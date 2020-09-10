@@ -75,6 +75,10 @@
           width: 100vw;
           height: auto;
           z-index: 99;
+
+          img {
+            width: 35vw;
+          }
         }
 
         &__head {
@@ -105,7 +109,6 @@
           &__animation {
 
             img {
-               width: 40vw;
                position: relative;
                top: 0%;
                left: 10%;
@@ -133,7 +136,7 @@
 
           &__animation {
             img {
-              width: 60vw;
+              width: 50vw;
             }
           }
 

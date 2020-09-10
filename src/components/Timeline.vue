@@ -206,7 +206,7 @@
                 position: relative;
                 left: 90%;
                 top: 5%;
-                font-size: 1.15rem;
+                font-size: 1rem;
                 padding: 5%;
             }
         }
@@ -228,7 +228,7 @@
             order: 1;
             position: relative;
             left: 55%;
-            font-size: 1.15rem;
+            font-size: 1rem;
             padding: 5%;
         }
 
@@ -332,6 +332,7 @@
                 .dropdown {
                     left: 100%;
                     width: 49vw;
+                    padding: 2%;
                 }
             }
 
@@ -341,6 +342,7 @@
                 left: 100%;
                 width: 49vw;
                 height: 25vh;
+                padding: 2%;
             }
 
             .title-even {
@@ -382,14 +384,14 @@
                     }
 
                     span {
-                        font-size: 3vw;
+                        font-size: 2.5vw;
                     }
                 }
 
                 .dropdown {
                     left: 110%;
                     top: 3%;
-                    font-size: 3vw;
+                    font-size: 2.5vw;
                     width: 50vw;
                 }
             }
@@ -402,7 +404,7 @@
                 order: 1;
                 position: relative;
                 left: 75%;
-                font-size: 3vw;
+                font-size: 2.5vw;
                 width: 50vw;
             }
 
@@ -422,7 +424,7 @@
 
                 span {
                     font-weight: bold;
-                    font-size: 3vw;
+                    font-size: 2.5vw;
                     margin-right: 5%;
                     white-space: nowrap;
                 }
