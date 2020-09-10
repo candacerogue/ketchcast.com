@@ -80,7 +80,7 @@
                 order: 2;
                 z-index: 99;
                 height: 55vh;
-                margin-top: 60%;
+                margin-top: 50%;
                 margin-left: -10%;
             }
         }
@@ -118,7 +118,7 @@
                     width: 100%;
                     height: 55vh;
                     position: relative;
-                    top: 60%;
+                    top: 50%;
                     justify-content: center;
                 }
             }
@@ -255,7 +255,7 @@
     {
         .chrome_only {
 
-            margin-top: 0%;
+            margin-top: 50%;
             position: relative;
 
         }
