@@ -80,7 +80,7 @@
                 order: 2;
                 z-index: 99;
                 height: 55vh;
-                margin-top: 40%;
+                margin-top: 50%;
                 margin-left: -10%;
             }
         }
