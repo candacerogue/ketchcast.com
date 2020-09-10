@@ -151,7 +151,6 @@
                     width: 100%;
                     height: 55vh;
                     position: relative;
-                    top: 75%;
                 }
             }
         }
@@ -182,7 +181,6 @@
                     height: 65vh;
                     margin-top: 0%;
                     position: relative;
-                    top: 60%;
                 }
             }
         }
@@ -292,7 +290,7 @@
                     z-index: 99;
                     width: 100%;
                     height: 45vh;
-                    margin-left: 0%;
+                    margin-right: 2%;
                     position: relative;
                     top: 20%;
                 }
