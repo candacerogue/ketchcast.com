@@ -4,7 +4,7 @@
       <div class="header__background__imagery">
         <div
           v-if="$mq === 'laptop'"
-          class="header__background__imagery__animation"
+          class="header__background__imagery__animation safari_only_header"
         >
           <video width="500" height="500" autoplay loop muted playsinline>
             <source src="../assets/JK Header Gif.mp4" type="video/mp4">
@@ -235,6 +235,18 @@
           &__head {
           }
         }
+      }
+    }
+  }
+
+/* Safari 10.1+ (alternate method) */
+
+  @media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+      
+      .safari_only_header {
+        position: relative;
+        top: 40%;
       }
     }
   }

@@ -80,7 +80,6 @@
                 order: 2;
                 z-index: 99;
                 height: 55vh;
-                margin-top: 50%;
                 margin-left: -10%;
             }
         }
@@ -194,7 +193,6 @@
 
         @media only screen and (max-width: 800px) {
             .safari_only { 
-
                 margin-top: 0 !important;
                 position: relative !important;
                 top: 0% !important;
@@ -255,7 +253,6 @@
     {
         .chrome_only {
 
-            margin-top: 50%;
             position: relative;
 
         }

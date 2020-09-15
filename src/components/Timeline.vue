@@ -14,7 +14,7 @@
                 Working with a team of journalism, product, and finance experts to launch sustainable media
                 organizations across the country.
             </div>
-            <div class="title-even">
+            <div class="title-even safari_only_others">
                 <span>2020</span>
                 <img src="../assets/AJP-Logo.png" alt="AJP-Logo">
             </div>
@@ -41,7 +41,7 @@
             <div class="dropdown-even">
                 Helped launch an editorial brand (Afrotech) focused on technology and how it impacts people of color.
             </div>
-            <div class="title-even" style="margin-top: -6%">
+            <div class="title-even safari_only_others" style="margin-top: -6%">
                 <span>2018-2019</span>
                 <img src="../assets/Blavity-logo.png" alt="Blavity-Logo">
             </div>
@@ -59,7 +59,7 @@
             <div class="dropdown-even">
                 Board member helping the center on strategy and curriculum.
             </div>
-            <div class="title-even">
+            <div class="title-even safari_only_others">
                 <span>2017</span>
                 <img src="../assets/WVMIC.jpeg" alt="WVMIC-Logo">
             </div>
@@ -79,7 +79,7 @@
                 Served as a Knight Innovator in residence while at CNN. I taught a class on food justice reporting and
                 audience engagement.
             </div>
-            <div class="title-even">
+            <div class="title-even safari_only_others">
                 <span>2016</span>
                 <img src="../assets/WVMS.jpeg" alt="WVMS-Logo">
             </div>
@@ -98,7 +98,7 @@
             <div class="dropdown-even">
                 Built and led audience engagement strategy around investigative journalism.
             </div>
-            <div class="title-even">
+            <div class="title-even safari_only_others">
                 <span>2015</span>
                 <img src="../assets/Center-for-Public-Integrity.jpg" alt="Center-For-Public-Integrity-Logo">
             </div>
@@ -117,7 +117,7 @@
                 Worked with a team of journalist to launch a desk covering wealth, poverty, and income inequality after
                 the financial crash of 2008.
             </div>
-            <div class="title-even">
+            <div class="title-even safari_only_others">
                 <span>2012-2014</span>
                 <img src="../assets/Marketplace.jpg" alt="Marketplace-Logo">
             </div>
@@ -565,6 +565,22 @@
 
                 span {
                 }
+            }
+
+        }
+    }
+
+
+   /* Safari 10.1+ (alternate method) */
+
+   @media not all and (min-resolution:.001dpcm){ 
+       @supports (-webkit-appearance:none) {
+
+            @media only screen and (max-width: 1024px) {
+                .safari_only_others { 
+                        top: 20% !important;  
+                }
+
             }
 
         }
