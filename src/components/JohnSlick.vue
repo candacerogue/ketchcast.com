@@ -138,7 +138,7 @@ img {
      @media only screen and (min-width: 801px) {
         .safari_only_slider {
           position: relative;
-          top: 70%;
+          bottom: 70%;
           left: 0%;
         }
       }
