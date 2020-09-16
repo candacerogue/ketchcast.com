@@ -114,7 +114,7 @@
         </div>
         <div class="card" id="even">
             <div class="dropdown-even">
-                Worked with a team of journalist to launch a desk covering wealth, poverty, and income inequality after
+                Worked with a team of journalists to launch a desk covering wealth, poverty, and income inequality after
                 the financial crash of 2008.
             </div>
             <div class="title-even safari_only_others">
