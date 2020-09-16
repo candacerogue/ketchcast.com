@@ -130,7 +130,7 @@ img {
       @media only screen and (max-width: 800px) {
         .safari_only_slider {
           position: relative;
-          top: -80%;
+          bottom: 90%;
           left: 5%;
         }
       }
@@ -138,7 +138,7 @@ img {
      @media only screen and (min-width: 801px) {
         .safari_only_slider {
           position: relative;
-          top: 0%;
+          top: 70%;
           left: 0%;
         }
       }
