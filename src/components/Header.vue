@@ -243,10 +243,11 @@
 
   @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
-      
-      .safari_only_header {
-        position: relative;
-        top: 40%;
+      @media only screen and (max-width: 700px) {
+        .safari_only_header {
+          position: relative;
+          top: 40%;
+        }
       }
     }
   }
