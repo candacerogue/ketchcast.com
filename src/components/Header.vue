@@ -160,7 +160,7 @@
           top: 0%;
 
           &__animation {
-
+            top: 20%;
             img {
               width: 85vw;
             }
