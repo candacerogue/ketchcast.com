@@ -578,7 +578,7 @@
 
             @media only screen and (max-width: 1024px) {
                 .safari_only_others { 
-                        top: -25% !important;  
+                        top: -35% !important;  
                 }
 
             }
