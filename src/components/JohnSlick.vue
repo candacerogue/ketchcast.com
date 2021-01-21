@@ -61,6 +61,11 @@
             src: "Art-9-Pic",
             alt: "What is it about Kendrick Lamar",
             href: "https://www.npr.org/2014/10/28/359340269/what-is-it-about-kendrick-lamar"
+          },
+          {
+            src: "Art-10-Pic",
+            alt: "More journalists of color become newsroom founders",
+            href: "https://www.niemanlab.org/2020/12/more-journalists-of-color-become-newsroom-founders/"
           }
         ],
         timer: null,
