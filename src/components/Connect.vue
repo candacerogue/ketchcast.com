@@ -110,7 +110,7 @@
 
         &__links {
             order: 4;
-            width: 20vw;
+            width: 40vw;
             height: 20vh;
             margin-left: 50%;
             position: relative;

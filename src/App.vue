@@ -21,6 +21,21 @@
 
   export default {
     name: 'App',
+    head () {
+      return {
+        title: 'John Ketchum Website',
+        meta: [
+        { property: 'og:title', content: `John Ketchum Website` },
+        { property: 'og:image', content: 'src/assets/JK-Header-Img.png' },
+        { property: 'keywords', content: 'Journalism, Journalist, AJP, American Journalism Project, John Ketchum' },
+        { property: 'og:url', content: 'https://ketchcast.com' },
+        { property: 'og:description', content: 'Checkout John Ketchum here.' },
+        { name: 'twitter:title', content: `John Ketchum Website` },
+        { name: 'twitter:description', content: 'Checkout John Ketchum here.' },
+        { name: 'twitter:image', content: 'src/assets/JK-Header-Img.png' }
+      ]
+      }
+    },
     components: {
       Header,
       About,
