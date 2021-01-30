@@ -11,18 +11,18 @@
         </div>
         <div class="connect__links">
             <span class="connect__connect-links__links__gmail">
-                <a href="malito:john.ketchum3@gmail.com">
-                    <img style="width: 5vw; height: auto; margin: 3%;" src="../assets/gmail.svg" alt="gmail">
+                <a href="malito:john.ketchum3@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img style="width: 5vw; height: auto; margin: 5%;" src="../assets/gmail.svg" alt="gmail">
                 </a>
             </span>
-            <span class="connect__connect-links__links__twitter">
+            <span class="connect__connect-links__links__twitter" target="_blank" rel="noopener noreferrer">
                 <a href="https://twitter.com/Ketchcast">
-                    <img style="width: 5vw; height: auto; margin: 3%;" src="../assets/twitter-black.svg" alt="twitter">
+                    <img style="width: 5vw; height: auto; margin: 5%;" src="../assets/twitter-black.svg" alt="twitter">
                 </a>
             </span>
-            <span class="connect__connect-links__links__linkedIn">
+            <span class="connect__connect-links__links__linkedIn" target="_blank" rel="noopener noreferrer">
                 <a href="https://www.linkedin.com/in/john-ketchum-69156155/">
-                    <img style="width: 5vw; height: auto; margin: 3%;" src="../assets/linkedin.svg" alt="linkedin">
+                    <img style="width: 5vw; height: auto; margin: 5%;" src="../assets/linkedin.svg" alt="linkedin">
                 </a>
             </span>
         </div>
@@ -95,7 +95,7 @@
 
             &__img {
                 order: 2;
-                background-image: url(../assets/connect-with-me.svg);
+                background-image: url(../assets/to-connect-fallback.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 40vw;
